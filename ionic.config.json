@@ -1,0 +1,7 @@
+{
+  "name": "springPraticaIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
