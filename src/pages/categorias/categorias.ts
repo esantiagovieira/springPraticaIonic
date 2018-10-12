@@ -24,7 +24,6 @@ export class CategoriasPage {
       this.categoriaList = response;
     },
     error => {
-      console.log(error);
     });
     
   }
