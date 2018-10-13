@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs/Rx";
 import { ClienteDTO } from "../../models/cliente.dto";
 import { API_CONFIG } from "../../config/api.config";
@@ -18,6 +18,5 @@ export class ClienteService {
    getImageFromS3(id: string) : Observable<any>{
        let url = `${API_CONFIG.s3BaseUrl}/cp${id}.jpg`
        return this.http.get(url, {responseType: 'blob'});
-
    }
 }
